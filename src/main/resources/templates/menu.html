@@ -15,9 +15,9 @@
         <th>&nbsp;</th>
         <th>Price (USD)</th>
     </tr>
-    <tr th:each="item : ${menuItems}">
+    <tr th:each="item : ${stuff}">
         <td>
-            <img th:src="@{${item.imageFile}}" alt="${item.name}">
+            <img th:src="@{${item.imageFile}}" th:alt="${item.name}">
         </td>
         <td>
             <h3 th:text="${item.name}">NAME</h3>
