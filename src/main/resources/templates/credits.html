@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
 </head>
 <body>
-<div th:insert="fragments/_header :: header"></div>
+<div th:insert="~{fragments/_header :: header}"></div>
 <div id="credits">
     Photos and descriptions borrowed from the following sources:
     <br/>
@@ -22,6 +22,6 @@
     <br/>
     <a href="https://www.shop-buenosaires.com/blog/2017/4/13/buenos-aires-best-markets">Feria de San Telmo</a>
 </div>
-<div th:insert="fragments/_footer :: footer"></div>
+<div th:insert="~{fragments/_footer :: footer}"></div>
 </body>
 </html>

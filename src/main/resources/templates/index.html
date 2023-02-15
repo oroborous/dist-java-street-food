@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
 </head>
 <body>
-<div th:insert="fragments/_header :: header"></div>
+<div th:insert="~{fragments/_header :: header}"></div>
 
 <div id="content">
     <img th:src="@{/img/feria-de-san-telmo.PNG}" alt="Feria de San Telmo">
@@ -24,6 +24,6 @@
         later in the day with tango dancers, drummers and street performers. Take your time to wander the length of
         Defensa then finish with a cerveza or glass of vino tinto in Plaza Dorrego at sundown.</p>
 </div>
-<div th:insert="fragments/_footer :: footer"></div>
+<div th:insert="~{fragments/_footer :: footer}"></div>
 </body>
 </html>

@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
 </head>
 <body>
-<div th:insert="fragments/_header :: header"></div>
+<div th:insert="~{fragments/_header :: header}"></div>
 
 <table class="menu">
     <tr>
@@ -29,6 +29,6 @@
     </tr>
 </table>
 
-<div th:insert="fragments/_footer :: footer"></div>
+<div th:insert="~{fragments/_footer :: footer}"></div>
 </body>
 </html>
