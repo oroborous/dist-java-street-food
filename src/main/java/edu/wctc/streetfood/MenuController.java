@@ -7,7 +7,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.io.IOException;
-import java.nio.file.Paths;
 
 @Controller
 public class MenuController {
@@ -18,7 +17,9 @@ public class MenuController {
         ObjectMapper mapper = new ObjectMapper();
 
         try {
-            menuItemArray = mapper.readValue(Paths.get("menuItems.json").toFile(), MenuItem[].class);
+            menuItemArray = mapper.readValue(
+                    MenuController.class.getResourceAsStream("menuItems.json"),
+                    MenuItem[].class);
         } catch (IOException e) {
             e.printStackTrace();
             menuItemArray = new MenuItem[0];
