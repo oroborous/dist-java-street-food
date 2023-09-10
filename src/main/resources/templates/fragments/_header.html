@@ -1,6 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://thymeleaf.org">
-<body>
+<head th:fragment="head(pageTitle)">
+    <meta charset="UTF-8">
+    <title th:text="${pageTitle}"></title>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+</head>
+
 <header th:fragment="header">
     <div id="logo">
         <a th:href="@{/}">Buenos Aires Street Food Café</a>
@@ -12,5 +16,3 @@
         </ul>
     </nav>
 </header>
-</body>
-</html>
