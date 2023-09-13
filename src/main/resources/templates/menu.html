@@ -12,7 +12,7 @@
     </tr>
     <tr th:each="item : ${menuItems}">
         <td>
-            <img th:src="@{${item.imageFile}}" th:alt="${item.name}">
+            <img th:src="@{${item.imageFileName}}" th:alt="${item.name}">
         </td>
         <td>
             <h3 th:text="${item.name}">NAME</h3>

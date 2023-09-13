@@ -9,6 +9,6 @@ public class MenuItem {
     private int id;
     private String name;
     private String description;
-    private String imageFile;
+    private String imageFileName;
     private double price;
 }
